@@ -1,0 +1,418 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+   
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  header {
+    background:palevioletred;
+    color: #fff;
+    padding: 1rem 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 1rem;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+    color: violet;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 5px;
+  }
+
+  .bgimage {
+    height:100vh;
+    background: url('https://images.pexels.com/photos/7354413/pexels-photo-7354413.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    position:relative;
+    margin: 0%;
+    padding: 0%;
+} 
+
+.hero_title {
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+.hero_desc {
+    font-size: 2rem;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+  }
+  
+
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+    .main-nav ul {
+      flex-direction: column;
+      display: none; /* Hidden by default */
+    }
+    .main-nav.active ul {
+      display: flex;
+    }
+  }
+
+  .about-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .about-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .about-content {
+    flex: 1;
+  }
+  
+  .about-content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    background-color: pink;
+  }
+  
+  .about-content p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #333;
+  }
+
+  .download-cv-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color:pink;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .download-cv-btn:hover {
+    background-color: pink;
+    color: violet;
+  }
+
+  .education-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+  }
+
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .education-section h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    background-color: pink;
+  }
+  
+  .education-item {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-left: 3px solid pink; /* Optional: gives a timeline feel */
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .education-item h3 {
+    margin-bottom: 10px;
+    font-size: 1.75em;
+    color: #333;
+  }
+  
+  .institution,
+  .duration {
+    font-size: 0.95em;
+    color: #777;
+    margin: 5px 0;
+  }
+  
+  .details {
+    margin-top: 10px;
+    line-height: 1.6;
+    color: #555;
+  }
+
+  @media (max-width: 768px) {
+    .education-item {
+      margin-left: 0;
+      border-left: none;
+      padding: 15px;
+    }
+    .education-section h2 {
+      font-size: 2em;
+    }
+  }
+
+  .skills-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .skills-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    background-color: pink;
+  }
+  
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .skill-item {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 180px;
+    transition: transform 0.3s;
+  }
+  
+  .skill-item:hover {
+    transform: translateY(-5px);
+    color: violet;
+  }
+  
+  .skill-item h3 {
+    margin-bottom: 10px;
+    font-size: 1.25em;
+    color: #333;
+  }
+  
+  .skill-item p {
+    font-size: 0.95em;
+    color: #777;
+  }
+
+  .progress-bar {
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 10px;
+    margin: 10px 0;
+  }
+  
+  .contact-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .contact-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    background-color: pink;
+  }
+  
+  .contact-section p {
+    margin-bottom: 40px;
+    color: #555;
+    font-size: 1.1em;
+  }
+  
+ 
+  .contact-form {
+    margin-bottom: 40px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .btn-submit {
+    background-color: pink;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-submit:hover {
+    background-color: pink;
+    color: violet;
+  }
+  
+  .direct-contact ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .direct-contact li {
+    margin: 10px 0;
+  }
+  
+  .direct-contact a {
+    color:pink;
+    text-decoration: none;
+  }
+  
+  .direct-contact a:hover {
+    text-decoration: underline;
+    color: violet;
+  }
+
+  .footer {
+    background-color: palevioletred;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+    display: inline-flex;
+    gap: 20px;
+  }
+  
+  .footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-nav a:hover {
+    color: violet;
+  }
+  
+  .footer-text {
+    font-size: 0.9em;
+  }
+
+  h2 {
+    opacity: 0;
+    animation: fadeIn 10s forwards; /* Adjust the duration as needed */
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+
+  p {
+    opacity: 0;
+    animation: fadeIn 10s forwards; /* Adjust the duration as needed */
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+
+  h3 {
+    opacity: 0;
+    animation: fadeIn 10s forwards; /* Adjust the duration as needed */
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+
+  form {
+    opacity: 0;
+    animation: fadeIn 10s forwards; /* Adjust the duration as needed */
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
